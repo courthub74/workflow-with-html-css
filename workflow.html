@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workflow App</title>
+
+    <!-- Inline CSS -->
+    <style>
+        body {
+            background-color: #F3F9FF;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            font-family: sans-serif;
+            background-color: #243F67;
+            color: white;
+            width: 20%;
+            height: 100vh;
+            text-align: center;
+
+            transition: 0.4s;
+        }
+
+        .sidebar h2 {
+            font-size: 3vh;
+            padding: 40px;
+        }
+
+        .sidebar ul li {
+            list-style-type: none;
+            padding: 20px;
+            padding-top: 50px;
+        }
+
+        .sidebar ul li a {
+            line-height: 50px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 25px;
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        /* PAGE */
+        .page {
+            font-family: sans-serif;
+        }
+        .logo{
+            padding: 30px;
+        }
+        .pagestuff {
+            padding: 50px;
+        }
+        .header {
+            font-size: 60px;
+            color: #243F67;
+            padding-bottom: 50px;
+            width: 800px;
+        }
+        .recents {
+            background-color: #ddd;
+            font-size: 40px;
+            color: #243F67;
+            padding-left: 40px;
+        }
+        .recentlist {
+            line-height: 70px;
+            padding-top: 50px;
+            font-size: 20px;
+            transition: 0.4s;
+        }
+        .recentlist ul li {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #one a {
+            color: green;
+        }
+
+        #two a {
+            color: orange;
+        }
+
+        #three a {
+            color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- BODY -->
+    <div class="container">
+
+            <!-- SIDEBAR -->
+            <div class="sidebar">
+                <h2>Workflow Machine</h2>
+                <ul>
+                    <li><a href="#">calendar</a></li>
+                    <li><a href="#">notes</a></li>
+                    <li><a href="#">tasks</a></li>
+                    <li><a href="#">spreadsheet</a></li>
+                </ul>
+            </div>
+
+            <!-- PAGE -->
+            <div class="page">
+               
+                <div class="logo">
+                    <img src="./img/logo.png" alt="logo" width="200px" height="200px">
+                </div>
+                
+                
+                <div class="pagestuff">
+                    <div class="header">Courtney, you've logged into the Workflow Machine!</div>
+                    <div class="recents">check out your recents</div>
+                    <div class="recentlist">
+                        <ul>
+                            <li id="one"><a href="#">Frontend Mentor Gamecard - in Deliverables</a></li>
+                            <li id="two"><a href="#">Tailwind CSS - in Classes to Take</a></li>
+                            <li id="three"><a href="#">Web Scrape project for WBS int.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+</body>
+</html>
